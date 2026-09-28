@@ -1,5 +1,7 @@
 # ZhuaTech Insight｜企业数据分析与 AI 洞察助手
 
+[简体中文](README.md) | [English](README.en.md)
+
 > 自然语言提问只是入口，可信指标、权限控制、查询证据和人工确认才是企业分析的基础。
 
 ZhuaTech Insight 由[知华科技（上海如静知华信息科技有限公司）](https://www.zhuatech.cn/)发布，面向经营、营销、客户和供应链分析场景。
