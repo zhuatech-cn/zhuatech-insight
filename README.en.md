@@ -1,5 +1,11 @@
 [简体中文](README.md) | **English**
 
+## 2026-10-23 update: Metric variance contribution
+
+Decomposes additive metric changes into signed net contributions and absolute movements, with explicit handling when offsetting changes make the net total zero.
+
+After signing in to the real backend, open the bottom-right business calculation tool to submit structured input, inspect calculated results and export complete JSON. The endpoint is `POST /api/workbench/variance-contribution` with the existing JWT. Computation is implemented server-side; it does not query another user's records, persist business documents, approve transactions or invoke external models. See [algorithm, sample and test notes](docs/AI_WORKFLOW_UPGRADE_20261023.md).
+
 # ZhuaTech Insight
 
 > A source-available enterprise project by [ZhuaTech](https://www.zhuatech.cn/) for enterprise data, knowledge, search, analytics, and AI operations.
