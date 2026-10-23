@@ -1,0 +1,70 @@
+[
+  {
+    "patch": {},
+    "expected": {
+      "decision": "PASS",
+      "volumeEffect": "#400",
+      "priceEffect": "#-240",
+      "totalChange": "#160"
+    },
+    "error": false
+  },
+  {
+    "patch": {
+      "minimumRevenue": "2160.01"
+    },
+    "expected": {
+      "decision": "REVIEW"
+    },
+    "error": false
+  },
+  {
+    "patch": {
+      "currentQty": "0"
+    },
+    "expected": {
+      "totalChange": "#-2000",
+      "volumeEffect": "#-2000",
+      "priceEffect": "#0"
+    },
+    "error": false
+  },
+  {
+    "patch": {
+      "baseQty": "0"
+    },
+    "expected": {
+      "volumeEffect": "#2400",
+      "priceEffect": "#-240",
+      "totalChange": "#2160"
+    },
+    "error": false
+  },
+  {
+    "patch": {
+      "currentPrice": "20"
+    },
+    "expected": {
+      "priceEffect": "#0",
+      "totalChange": "#400"
+    },
+    "error": false
+  },
+  {
+    "patch": {
+      "currentQty": "100"
+    },
+    "expected": {
+      "volumeEffect": "#0",
+      "totalChange": "#-200"
+    },
+    "error": false
+  },
+  {
+    "patch": {
+      "currentPrice": "-1"
+    },
+    "expected": {},
+    "error": true
+  }
+]

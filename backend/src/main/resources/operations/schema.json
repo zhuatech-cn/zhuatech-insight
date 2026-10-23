@@ -1,0 +1,92 @@
+{
+  "slug": "insight",
+  "title": "营收价量差异精确拆解",
+  "fields": [
+    {
+      "key": "id",
+      "label": "记录编号",
+      "type": "ID"
+    },
+    {
+      "key": "baseQty",
+      "label": "基期销量",
+      "type": "NUMBER",
+      "scale": 6,
+      "min": "0",
+      "max": "1000000000000"
+    },
+    {
+      "key": "basePrice",
+      "label": "基期单价",
+      "type": "NUMBER",
+      "scale": 2,
+      "min": "0",
+      "max": "1000000000000"
+    },
+    {
+      "key": "currentQty",
+      "label": "本期销量",
+      "type": "NUMBER",
+      "scale": 6,
+      "min": "0",
+      "max": "1000000000000"
+    },
+    {
+      "key": "currentPrice",
+      "label": "本期单价",
+      "type": "NUMBER",
+      "scale": 2,
+      "min": "0",
+      "max": "1000000000000"
+    },
+    {
+      "key": "minimumRevenue",
+      "label": "本期营收目标",
+      "type": "NUMBER",
+      "scale": 2,
+      "min": "0",
+      "max": "1000000000000"
+    }
+  ],
+  "columns": [
+    {
+      "key": "baseRevenue",
+      "label": "基期营收"
+    },
+    {
+      "key": "currentRevenue",
+      "label": "本期营收"
+    },
+    {
+      "key": "volumeEffect",
+      "label": "销量效应"
+    },
+    {
+      "key": "priceEffect",
+      "label": "价格效应"
+    },
+    {
+      "key": "totalChange",
+      "label": "营收总变化"
+    }
+  ],
+  "description": "将两期营收变化拆为基期价格下的销量效应及本期销量下的价格效应，确保两项之和等于总变化。不用平均率相加。",
+  "owner": "上海如静知华信息科技有限公司",
+  "website": "https://www.zhuatech.cn/",
+  "authorization": "商业授权或定制开发请微信添加微信号zhuatech或zhuatech2进行咨询。",
+  "version": 1,
+  "notes": "输入均须为已获授权的同口径数据。金额固定人民币元；比例为百分数。核算结果只用于复核，未审批、未写库、未发起外部调用，也未触发付款、签名、资料销毁或设备控制。建议不构成法律、安全、会计或碳核证结论。",
+  "sample": {
+    "asOf": "2026-10-24",
+    "records": [
+      {
+        "id": "ITEM-001",
+        "baseQty": "100",
+        "basePrice": "20",
+        "currentQty": "120",
+        "currentPrice": "18",
+        "minimumRevenue": "2100"
+      }
+    ]
+  }
+}
